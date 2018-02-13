@@ -7,7 +7,7 @@ Most twitter wrapper doesn't offer hastags or dollartags filtering options.
 The purpose of this software is to clean up twitter live feeds which is often infested by all ads spamming bots, which makes life hard trying to consume valuable information from live feeds.
 
 
-## Example tweet of an typical spam ads 
+## Example tweet of a typical spam ads 
 
 ```
 don't miss out on registering on Binance, before registrations close again
