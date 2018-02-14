@@ -1,13 +1,18 @@
+
 # Tweet Feed
 
-This is a twitter wrapper built with another wrapper twitterscrapper.
+## Introduction
 
-Most twitter wrapper doesn't offer hastags or dollartags filtering options. 
+Most twitter wrapper out there doesn't offer hastags or dollartags filtering options. 
 
 The purpose of this software is to clean up twitter live feeds which is often infested by all ads spamming bots, which makes life hard trying to consume valuable information from live feeds.
 
+This is a twitter wrapper built with another wrapper [twitterscrapper](https://github.com/taspinar/twitterscraper
+).
 
-## Example tweet of a typical spam ads 
+## What's a spam ads?
+
+The following is an example of a typical spam ads:
 
 ```
 don't miss out on registering on Binance, before registrations close again
@@ -29,11 +34,27 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Regular usage
+
 ```sh
-python feed.py -q 'Raiden Network' --exclude Radian -l 20 --start 2018-01-15 --end 2018-02-10
+python feed.py -q '$RDN OR Raiden Network' --exclude Radian -l 20 --start 2018-01-15 --end 2018-02-10
+```
+
+### Reading long output
+
+```sh
+python feed.py -q '$ETH' --start 2018-01-01 | less -R
+```
+
+### Output into file
+
+```sh
+python feed.py -q '$QSP' --start 2018-01-01 >> output.log
 ```
 
 ## Command
+
+This command list can be access by ```--help``` parameter
 
 ```sh
 Usage: feed.py [OPTIONS]
