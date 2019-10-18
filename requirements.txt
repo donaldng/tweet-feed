@@ -7,6 +7,6 @@ coala-utils==0.5.1
 fake-useragent==0.1.10
 idna==2.6
 lxml==4.1.1
-requests==2.18.4
+requests==2.20.0
 twitterscraper==0.4.2
 urllib3==1.22
